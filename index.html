@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>となりの経営者 | 小さなブランドオーナーが語る経営のリアル</title>
+    <meta name="description" content="クラフトジン「HOLON」代表 堀江麗と、サステナブルファッション「KAPOK KNOT」代表 深井喜翔が、ブランドづくりと経営のリアルを語るポッドキャスト。">
+    <meta name="keywords" content="となりの経営者, ポッドキャスト, HOLON, KAPOK KNOT, 堀江麗, 深井喜翔, 経営, ブランド, D2C">
+    <meta property="og:title" content="となりの経営者 | 小さなブランドオーナーが語る経営のリアル">
+    <meta property="og:description" content="クラフトジン「HOLON」代表 堀江麗と、サステナブルファッション「KAPOK KNOT」代表 深井喜翔が語るポッドキャスト番組の公式サイト。">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== Ripple Background SVG (decorative) ========== -->
+    <svg class="ripple-bg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <radialGradient id="rippleGrad1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="rgba(180,150,100,0.06)" />
+                <stop offset="100%" stop-color="rgba(180,150,100,0)" />
+            </radialGradient>
+        </defs>
+        <circle class="ripple-circle r1" cx="20%" cy="30%" r="200" fill="none" stroke="rgba(180,150,100,0.08)"
+            stroke-width="1" />
+        <circle class="ripple-circle r2" cx="20%" cy="30%" r="320" fill="none" stroke="rgba(180,150,100,0.05)"
+            stroke-width="1" />
+        <circle class="ripple-circle r3" cx="20%" cy="30%" r="440" fill="none" stroke="rgba(180,150,100,0.03)"
+            stroke-width="1" />
+        <circle class="ripple-circle r4" cx="80%" cy="70%" r="180" fill="none" stroke="rgba(180,150,100,0.07)"
+            stroke-width="1" />
+        <circle class="ripple-circle r5" cx="80%" cy="70%" r="300" fill="none" stroke="rgba(180,150,100,0.04)"
+            stroke-width="1" />
+        <circle class="ripple-circle r6" cx="80%" cy="70%" r="420" fill="none" stroke="rgba(180,150,100,0.02)"
+            stroke-width="1" />
+    </svg>
+
+    <!-- ========== Navigation ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">となりの経営者</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">番組について</a></li>
+                <li><a href="#hosts" class="nav-link">MC紹介</a></li>
+                <li><a href="#episodes" class="nav-link">エピソード</a></li>
+                <li><a href="#sns" class="nav-link">SNS</a></li>
+                <li><a href="#platforms" class="nav-link nav-link--cta">聴いてみる</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== Hero Section ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-ripple-canvas" id="heroRippleCanvas"></div>
+        <div class="hero-content">
+            <div class="hero-cover" data-animate="fade-up">
+                <img src="img/cover.jpg" alt="となりの経営者 カバーアート" class="hero-cover-img" id="heroCover">
+            </div>
+            <div class="hero-text" data-animate="fade-up" data-delay="200">
+                <p class="hero-badge">Podcast</p>
+                <h1 class="hero-title">となりの<br><span class="hero-title-accent">経営者</span></h1>
+                <p class="hero-subtitle">小さなブランドオーナーである二人が<br class="sp-only">「となりの経営者のリアル」を語る番組</p>
+                <div class="hero-hosts">
+                    <span class="hero-host-tag">堀江 麗 <small>/ HOLON</small></span>
+                    <span class="hero-host-divider">×</span>
+                    <span class="hero-host-tag">深井 喜翔 <small>/ KAPOK KNOT</small></span>
+                </div>
+                <div class="hero-actions">
+                    <a href="https://open.spotify.com/show/1hMSLjGSfHhjnRfqHVewNz" target="_blank" rel="noopener"
+                        class="btn btn--primary" id="btnSpotify">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+                        </svg>
+                        Spotifyで聴く
+                    </a>
+                    <a href="https://podcasts.apple.com/jp/podcast/%E3%81%A8%E3%81%AA%E3%82%8A%E3%81%AE%E7%B5%8C%E5%96%B6%E8%80%85/id1859892825"
+                        target="_blank" rel="noopener" class="btn btn--outline" id="btnApple">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                        </svg>
+                        Apple Podcast
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator" aria-label="下にスクロール">
+                <span class="scroll-line"></span>
+                <span class="scroll-label">Scroll</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== About Section ========== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">About</span>
+                <h2 class="section-title">番組について</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content" data-animate="fade-up" data-delay="200">
+                <div class="about-card">
+                    <div class="about-card-number">01</div>
+                    <h3>コンセプト</h3>
+                    <p>「となりの経営者」は、小さなブランドオーナーである二人が<strong>「となりの経営者のリアル」</strong>を語る番組です。ブランドづくりの過程や経営のいろはなど、さまざまな<strong>一次情報</strong>をお届けしています。
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-number">02</div>
+                    <h3>こんな方におすすめ</h3>
+                    <ul class="about-list">
+                        <li>D2Cブランドの立ち上げに興味がある方</li>
+                        <li>小さなチームで経営をしている方</li>
+                        <li>ブランドづくりのリアルな裏側を知りたい方</li>
+                        <li>起業・独立を考えている方</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-number">03</div>
+                    <h3>配信情報</h3>
+                    <dl class="about-dl">
+                        <div>
+                            <dt>配信頻度</dt>
+                            <dd>毎週更新</dd>
+                        </div>
+                        <div>
+                            <dt>配信開始</dt>
+                            <dd>2025年12月</dd>
+                        </div>
+                        <div>
+                            <dt>エピソード数</dt>
+                            <dd>6話 〜</dd>
+                        </div>
+                        <div>
+                            <dt>1話あたり</dt>
+                            <dd>約27〜54分</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Hosts Section ========== -->
+    <section class="section hosts" id="hosts">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">MC</span>
+                <h2 class="section-title">パーソナリティ</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="hosts-grid" data-animate="fade-up" data-delay="200">
+                <!-- Host 1: 堀江麗 -->
+                <div class="host-card" id="hostHorie">
+                    <div class="host-photo">
+                        <img src="img/horie.png" alt="堀江 麗" class="host-photo-img" loading="lazy">
+                    </div>
+                    <div class="host-info">
+                        <h3 class="host-name">堀江 麗<span class="host-name-en">Rei Horie</span></h3>
+                        <p class="host-brand">
+                            <span class="host-brand-name">HOLON</span>
+                            <span class="host-brand-role">代表 / 蒸留調香師</span>
+                        </p>
+                        <p class="host-desc">クラフトジンブランド「HOLON」の代表。「Drinking as
+                            Meditation（飲む瞑想）」をコンセプトに、東洋のハーブやスパイスをブレンドし、心身の調和をもたらすクラフトジンを手がける。</p>
+                        <a href="https://holongin.com/" target="_blank" rel="noopener" class="host-link">
+                            ブランドサイト<span class="host-link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Host 2: 深井喜翔 -->
+                <div class="host-card" id="hostFukai">
+                    <div class="host-photo">
+                        <img src="img/fukai.jpg" alt="深井 喜翔" class="host-photo-img" loading="lazy">
+                    </div>
+                    <div class="host-info">
+                        <h3 class="host-name">深井 喜翔<span class="host-name-en">Kisho Fukai</span></h3>
+                        <p class="host-brand">
+                            <span class="host-brand-name">KAPOK KNOT</span>
+                            <span class="host-brand-role">代表</span>
+                        </p>
+                        <p class="host-desc">1947年創業のアパレルメーカー双葉商事の4代目。2020年にサステナブルファッションブランド「KAPOK
+                            KNOT」を立ち上げ。木の実由来の天然素材「カポック」を活用した、環境に優しいものづくりを展開。</p>
+                        <a href="https://kapok-knot.com/" target="_blank" rel="noopener" class="host-link">
+                            ブランドサイト<span class="host-link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== Episodes Section ========== -->
+    <section class="section episodes" id="episodes">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Episodes</span>
+                <h2 class="section-title">エピソード</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="episodes-list" data-animate="fade-up" data-delay="200">
+
+                <!-- Episode 3-2 -->
+                <article class="episode-card" id="ep3-2">
+                    <div class="episode-header">
+                        <span class="episode-number">#3-2</span>
+                        <div class="episode-meta">
+                            <time class="episode-date">2026.02.09</time>
+                            <span class="episode-duration">27 min</span>
+                        </div>
+                    </div>
+                    <h3 class="episode-title">チーム作り：成長期編</h3>
+                    <div class="episode-topics">
+                        <ul class="topic-list">
+                            <li class="topic-heading">事例① HOLON チーム構成 ― カルチャーフィットが最優先</li>
+                            <li class="topic-heading">事例② KAPOK KNOT ― ブランドチームと開発チームの横断</li>
+                            <li class="topic-heading">ブランドとしてのトンマナを揃えるには？</li>
+                            <li class="topic-heading">代表の取扱説明書とカルチャーの言語化</li>
+                        </ul>
+                    </div>
+                    <div class="episode-actions">
+                        <a href="https://podcasts.apple.com/jp/podcast/3-2-%E3%83%81%E3%83%BC%E3%83%A0%E4%BD%9C%E3%82%8A-%E6%88%90%E9%95%B7%E6%9C%9F%E7%B7%A8/id1859892825?i=1000748873365"
+                            target="_blank" rel="noopener" class="episode-link">Apple Podcast</a>
+                        <a href="https://open.spotify.com/show/1hMSLjGSfHhjnRfqHVewNz" target="_blank" rel="noopener"
+                            class="episode-link">Spotify</a>
+                    </div>
+                </article>
+
+                <!-- Episode 3-1 -->
+                <article class="episode-card" id="ep3-1">
+                    <div class="episode-header">
+                        <span class="episode-number">#3-1</span>
+                        <div class="episode-meta">
+                            <time class="episode-date">2026.01.26</time>
+                            <span class="episode-duration">30 min</span>
+                        </div>
+                    </div>
+                    <h3 class="episode-title">チーム作り：ゼロイチ編</h3>
+                    <div class="episode-topics">
+                        <ul class="topic-list">
+                            <li class="topic-heading">どうやってチームを立ち上げた？</li>
+                            <li class="topic-heading">HOLONのチーム立ち上げ経緯</li>
+                            <li class="topic-heading">立ち上げ時のチームコミュニケーション</li>
+                            <li class="topic-heading">立ち上げ時の予算のリアル</li>
+                            <li class="topic-heading">初期プロダクトとチームの関わり方</li>
+                        </ul>
+                    </div>
+                    <div class="episode-actions">
+                        <a href="https://podcasts.apple.com/jp/podcast/3-1-%E3%83%81%E3%83%BC%E3%83%A0%E4%BD%9C%E3%82%8A-%E3%82%BB-%E3%83%AD%E3%82%A4%E3%83%81%E7%B7%A8/id1859892825?i=1000746641120"
+                            target="_blank" rel="noopener" class="episode-link">Apple Podcast</a>
+                        <a href="https://open.spotify.com/show/1hMSLjGSfHhjnRfqHVewNz" target="_blank" rel="noopener"
+                            class="episode-link">Spotify</a>
+                    </div>
+                </article>
+
+                <!-- Episode 2 -->
+                <article class="episode-card" id="ep2">
+                    <div class="episode-header">
+                        <span class="episode-number">#2</span>
+                        <div class="episode-meta">
+                            <time class="episode-date">2026.01.13</time>
+                            <span class="episode-duration">50 min</span>
+                        </div>
+                    </div>
+                    <h3 class="episode-title">ブランド名はどうやって決めた？</h3>
+                    <div class="episode-topics">
+                        <ul class="topic-list">
+                            <li class="topic-heading">会社名とブランド名の違い</li>
+                            <li class="topic-heading">語感の重要さ</li>
+                            <li class="topic-heading">思想を纏う vs 世の中に新しい選択肢を提示する</li>
+                            <li class="topic-heading">個人名を冠したブランドの背負うもの</li>
+                        </ul>
+                    </div>
+                    <div class="episode-actions">
+                        <a href="https://podcasts.apple.com/jp/podcast/2-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E3%83%88%E3%83%BC%E3%82%AF-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%90%8D%E3%81%AF%E3%81%A9%E3%81%86%E3%82%84%E3%81%A3%E3%81%A6%E6%B1%BA%E3%82%81%E3%81%9F/id1859892825?i=1000744916138"
+                            target="_blank" rel="noopener" class="episode-link">Apple Podcast</a>
+                        <a href="https://open.spotify.com/show/1hMSLjGSfHhjnRfqHVewNz" target="_blank" rel="noopener"
+                            class="episode-link">Spotify</a>
+                    </div>
+                </article>
+
+                <!-- Episode 1 -->
+                <article class="episode-card" id="ep1">
+                    <div class="episode-header">
+                        <span class="episode-number">#1</span>
+                        <div class="episode-meta">
+                            <time class="episode-date">2025.12.22</time>
+                            <span class="episode-duration">54 min</span>
+                        </div>
+                    </div>
+                    <h3 class="episode-title">良いブランドとは？</h3>
+                    <div class="episode-topics">
+                        <ul class="topic-list">
+                            <li class="topic-heading">推したくなる知り合いのブランド</li>
+                            <li class="topic-heading">良いブランドって何？</li>
+                            <li class="topic-heading">プロダクトの力</li>
+                        </ul>
+                    </div>
+                    <div class="episode-actions">
+                        <a href="https://podcasts.apple.com/jp/podcast/1-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E3%83%88%E3%83%BC%E3%82%AF-%E8%89%AF%E3%81%84%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E3%81%A8%E3%81%AF/id1859892825?i=1000742316809"
+                            target="_blank" rel="noopener" class="episode-link">Apple Podcast</a>
+                        <a href="https://open.spotify.com/show/1hMSLjGSfHhjnRfqHVewNz" target="_blank" rel="noopener"
+                            class="episode-link">Spotify</a>
+                    </div>
+                </article>
+
+                <!-- Episode 0-2 -->
+                <article class="episode-card" id="ep0-2">
+                    <div class="episode-header">
+                        <span class="episode-number">#0-2</span>
+                        <div class="episode-meta">
+                            <time class="episode-date">2025.12.15</time>
+                            <span class="episode-duration">38 min</span>
+                        </div>
+                    </div>
+                    <h3 class="episode-title">パーソナリティの深井喜翔ってなにもの？</h3>
+                    <div class="episode-topics">
+                        <ul class="topic-list">
+                            <li class="topic-heading">反骨心で選んだ進路</li>
+                            <li class="topic-heading">KAPOK KNOT 立ち上げ前夜 ― 100の事例分析</li>
+                            <li class="topic-heading">サステナブルとビジネスの両立</li>
+                            <li class="topic-heading">機能的価値と情緒的価値</li>
+                            <li class="topic-heading">家業と4代目</li>
+                        </ul>
+                    </div>
+                    <div class="episode-actions">
+                        <a href="https://podcasts.apple.com/jp/podcast/0-2-%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AA%E3%83%86%E3%82%A3%E3%81%AE%E6%B7%B1%E4%BA%95%E5%96%9C%E7%BF%94%E3%81%A3%E3%81%A6%E3%81%AA%E3%81%AB%E3%82%82%E3%81%AE/id1859892825?i=1000741351298"
+                            target="_blank" rel="noopener" class="episode-link">Apple Podcast</a>
+                        <a href="https://open.spotify.com/show/1hMSLjGSfHhjnRfqHVewNz" target="_blank" rel="noopener"
+                            class="episode-link">Spotify</a>
+                    </div>
+                </article>
+
+                <!-- Episode 0-1 -->
+                <article class="episode-card" id="ep0-1">
+                    <div class="episode-header">
+                        <span class="episode-number">#0-1</span>
+                        <div class="episode-meta">
+                            <time class="episode-date">2025.12.08</time>
+                            <span class="episode-duration">27 min</span>
+                        </div>
+                    </div>
+                    <h3 class="episode-title">パーソナリティのHOLON堀江麗ってなにもの？</h3>
+                    <div class="episode-topics">
+                        <ul class="topic-list">
+                            <li class="topic-heading">堀江麗の人物像に迫る</li>
+                            <li class="topic-heading">HOLON創業と「飲む瞑想」の原点</li>
+                        </ul>
+                    </div>
+                    <div class="episode-actions">
+                        <a href="https://podcasts.apple.com/jp/podcast/0-1-%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AA%E3%83%86%E3%82%A3%E3%81%AEholon%E5%A0%80%E6%B1%9F%E9%BA%97%E3%81%A3%E3%81%A6%E3%81%AA%E3%81%AB%E3%82%82%E3%81%AE/id1859892825?i=1000740362912"
+                            target="_blank" rel="noopener" class="episode-link">Apple Podcast</a>
+                        <a href="https://open.spotify.com/show/1hMSLjGSfHhjnRfqHVewNz" target="_blank" rel="noopener"
+                            class="episode-link">Spotify</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SNS Section ========== -->
+    <section class="section sns" id="sns">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Social</span>
+                <h2 class="section-title">SNSで繋がろう</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="sns-content" data-animate="fade-up" data-delay="200">
+                <p class="sns-description">SNSアカウントを準備中です。<br>オープン次第、最新情報やエピソードのハイライトをお届けします。</p>
+                <div class="sns-grid">
+                    <!-- Instagram -->
+                    <div class="sns-card" id="snsInstagram">
+                        <div class="sns-card-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>エピソードのビジュアルハイライトや収録の裏側をお届け予定</p>
+                        <span class="sns-badge">Coming Soon</span>
+                    </div>
+                    <!-- X -->
+                    <div class="sns-card" id="snsX">
+                        <div class="sns-card-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </div>
+                        <h3>X（Twitter）</h3>
+                        <p>最新エピソードの告知や経営に関するつぶやきを発信予定</p>
+                        <span class="sns-badge">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Platforms Section ========== -->
+    <section class="section platforms" id="platforms">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Listen</span>
+                <h2 class="section-title">配信プラットフォーム</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="platforms-grid" data-animate="fade-up" data-delay="200">
+                <a href="https://open.spotify.com/show/1hMSLjGSfHhjnRfqHVewNz" target="_blank" rel="noopener"
+                    class="platform-card" id="platformSpotify">
+                    <svg class="platform-card-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+                    </svg>
+                    <span class="platform-card-name">Spotify</span>
+                </a>
+                <a href="https://podcasts.apple.com/jp/podcast/%E3%81%A8%E3%81%AA%E3%82%8A%E3%81%AE%E7%B5%8C%E5%96%B6%E8%80%85/id1859892825"
+                    target="_blank" rel="noopener" class="platform-card" id="platformApple">
+                    <svg class="platform-card-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                    </svg>
+                    <span class="platform-card-name">Apple Podcast</span>
+                </a>
+                <a href="https://music.amazon.co.jp/search/%E3%81%A8%E3%81%AA%E3%82%8A%E3%81%AE%E7%B5%8C%E5%96%B6%E8%80%85"
+                    target="_blank" rel="noopener" class="platform-card" id="platformAmazon">
+                    <svg class="platform-card-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M.045 18.02c.072-.116.187-.124.348-.064 2.729 1.391 5.655 2.095 8.777 2.095 2.089 0 4.11-.378 6.063-1.134.506-.196.957-.367 1.355-.516.344-.128.617-.039.819.267.202.307.139.629-.191.967-.33.339-.752.607-1.269.806-2.108.811-4.331 1.217-6.672 1.217-3.397 0-6.498-.793-9.302-2.38-.181-.103-.247-.218-.197-.346.03-.076.074-.126.128-.151l.041-.261z" />
+                    </svg>
+                    <span class="platform-card-name">Amazon Music</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Contact Section ========== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-inner" data-animate="fade-up">
+                <div class="contact-text">
+                    <span class="section-label">Contact</span>
+                    <h2 class="contact-title">お便り・ご出演依頼</h2>
+                    <p class="contact-desc">リスナーの皆さまからのメッセージや、<br>ゲスト出演のご依頼をお待ちしています。</p>
+                </div>
+                <a href="mailto:tonarinokeieisha@gmail.com" class="btn btn--primary btn--lg" id="btnContact">
+                    メールで連絡する
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo">となりの経営者</span>
+                    <p class="footer-tagline">小さなブランドオーナーが語る<br>経営のリアル</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>番組</h4>
+                        <ul>
+                            <li><a href="#about">番組について</a></li>
+                            <li><a href="#hosts">MC紹介</a></li>
+                            <li><a href="#episodes">エピソード</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>配信先</h4>
+                        <ul>
+                            <li><a href="https://open.spotify.com/show/1hMSLjGSfHhjnRfqHVewNz" target="_blank"
+                                    rel="noopener">Spotify</a></li>
+                            <li><a href="https://podcasts.apple.com/jp/podcast/%E3%81%A8%E3%81%AA%E3%82%8A%E3%81%AE%E7%B5%8C%E5%96%B6%E8%80%85/id1859892825"
+                                    target="_blank" rel="noopener">Apple Podcast</a></li>
+                            <li><a href="https://music.amazon.co.jp/search/%E3%81%A8%E3%81%AA%E3%82%8A%E3%81%AE%E7%B5%8C%E5%96%B6%E8%80%85"
+                                    target="_blank" rel="noopener">Amazon Music</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>ブランド</h4>
+                        <ul>
+                            <li><a href="https://holongin.com/" target="_blank" rel="noopener">HOLON</a></li>
+                            <li><a href="https://kapok-knot.com/" target="_blank" rel="noopener">KAPOK KNOT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025–2026 となりの経営者 - tonarino keieisha</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
